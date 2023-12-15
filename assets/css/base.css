@@ -1,0 +1,42 @@
+body {
+    font: 400 1rem "DM Sans", sans-serif;
+    color: var(--text-color);
+    background: var(--body-color);
+
+    /* ???????????????????????????????????? */
+    -webkit-font-smoothing: antialised;
+}
+
+h1 {
+    font: 700 1.875rem "Poppins", sans-serif;
+    color: var(--title-color);
+
+    /* ???????????????????????????????????? */
+    -webkit-font-smoothing: auto;
+}
+
+.button {
+    background-color: var(--base-color);
+    color: var(--text-color-light);
+    height: 3.5rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: .25rem;
+    font: 500 1rem "DM Sans", sans-serif;
+
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background-color: var(--base-color-alt);
+}
+
+.divider-1 {
+    height: 1px;
+    background: linear-gradient(
+        270deg, 
+        hsla(var(--hue), 36%, 57%, 1) 0%, 
+        hsla(var(--hue), 65%, 88%, .34) 100%
+    );
+}
