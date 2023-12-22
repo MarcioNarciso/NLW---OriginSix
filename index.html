@@ -11,22 +11,41 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Poppins:wght@400;500;700&family=Press+Start+2P&display=swap"
         rel="stylesheet">
 
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/fonts/style.css">
+
     <title>OriginSix</title>
 
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/variables.css" />
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/layout.css" />
+    <link rel="stylesheet" href="assets/css/logo.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
     <link rel="stylesheet" href="assets/css/home.css" />
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+
 </head>
 
 <body>
-    <header id="header">
+    <header id="header" class="">
         <nav class="container">
             <a class="logo" href="#">
                 beauty<span>salon</span>.
             </a>
-            <div>...</div>
+            <div class="menu">
+                <ul class="grid">
+                    <li><a class="title" href="#home">Início</a></li>
+                    <li><a class="title" href="#about">Sobre</a></li>
+                    <li><a class="title" href="#services">Serviços</a></li>
+                    <li><a class="title" href="#testimonials">Depoimentos</a></li>
+                    <li><a class="title" href="#contact">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="toggle icon-menu"></div>
+            <div class="toggle icon-x"></div>
         </nav>
     </header>
 
@@ -37,7 +56,7 @@
                     <img src="assets/images/main-image.jpg" alt="Mulher sorrindo e penteando o cabelo de outra mulher.">
                 </div>
                 <div class="text">
-                    <h1>Saúde natural para os seus cabelos</h1>
+                    <h2 class="title">Saúde natural para os seus cabelos</h2>
                     <p>
                         Um salão exclusivo em São Paulo, especializado em tratamentos naturais.
                     </p>
@@ -48,12 +67,76 @@
 
         <div class="divider-1"></div>
 
-        <section class="section">
-            <div class="container">
-                outra section
+        <section class="section" id="about">
+            <div class="container grid">
+                <div class="image">
+                    <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Trẽs mulheres sorrindo.">
+                </div>
+                <div class="text">
+                    <h2 class="title">Sobre nós</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt recusandae, sit eius libero
+                        aperiam cupiditate, nam numquam accusamus repellendus, explicabo consequuntur? Possimus porro
+                        exercitationem soluta ab. Ex soluta excepturi impedit.
+                    </p>
+                    <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam magnam eos ex, perferendis
+                        repudiandae quam unde nesciunt quo commodi fuga fugiat quis nostrum libero accusantium
+                        similique, repellat natus vitae reiciendis?
+                    </p>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas corrupti aperiam reprehenderit
+                        unde praesentium autem repellendus vitae ullam ipsa eos facilis minima, consequuntur dolor
+                        tempora ratione sequi consectetur dolore commodi.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider-2"></div>
+
+        <section class="section" id="services">
+            <div class="container grid">
+                <header>
+                    <h2 class="title">Serviços</h2>
+                    <p>
+                        Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já
+                        conquistou clientes de inúmeros países com seus tratamentos
+                        exclusivos e totalmente naturais.
+                    </p>
+                </header>
+                <div class="cards grid">
+                    <div class="card">
+                        <i class="icon-health_treatment_illustration_hair_beauty_icon"></i>
+                        <h3 class="title">Terapia Capilar</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro possimus magni ab dolor rem
+                            necessitatibus, alias sapiente quis accusamus nisi ullam hic tempora voluptatem consequuntur
+                            aspernatur labore obcaecati minima. Officiis.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-scissors"></i>
+                        <h3 class="title">Cortes</h3>
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto quaerat dicta animi.
+                            Harum eum molestias distinctio quas vel, ea maxime nam reiciendis eos soluta fuga quibusdam
+                            ad. Vitae, quidem fuga?
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="icon-shampoo"></i>
+                        <h3 class="title">Tratamentos</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam odio maiores molestias eius
+                            voluptatibus, consectetur sint corporis soluta? Vero nobis ullam praesentium libero
+                            laudantium aperiam, esse at magni. Facere, repudiandae.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+
+    <script defer src="assets/scripts/main.js"></script>
 </body>
 
 </html>

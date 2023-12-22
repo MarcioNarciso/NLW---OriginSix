@@ -1,0 +1,104 @@
+#header nav {
+    height: var(--header-height);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#header nav ul li{
+    text-align: center;
+}
+
+#header nav ul li a{
+    transition: .3s;
+    position: relative;
+}
+
+#header nav ul li a:hover{
+    color: var(--base-color);
+}
+
+#header nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: var(--base-color);
+    position: absolute;
+    left: 0;
+    bottom: -1.5rem;
+    transition: width .2s;
+}
+
+#header nav ul li a:hover::after{
+    width: 100%;
+}
+
+#header nav .menu {
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+    transition: .2s;
+}
+
+/* 
+    Esconde os itens do menu até que o menu seja aberto.
+*/
+#header nav .menu ul {
+    display: none;
+}
+
+/* 
+    Mostrar menu.
+    Menu aberto na tela todo. 
+    Somente mobile.
+*/
+
+#header nav.show .menu {
+    opacity: 1;
+    visibility: visible;
+    background: var(--body-color);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: grid;
+    place-content: center;
+}
+
+/* 
+    Exibe os itens do menu já aberto.
+*/
+#header nav.show .menu ul {
+    display: grid;
+}
+
+#header nav.show ul.grid{
+    gap: 4rem;
+}
+
+/* Toggle Menu */
+.toggle {
+    color: var(--base-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#header nav .icon-x {
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    top: -1.5rem;
+    right: 1.5rem;
+
+    transition: .2s;
+}
+
+#header nav.show .icon-x{
+    visibility: visible;
+    opacity: 1;
+    top: 1.5rem;
+}

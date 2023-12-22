@@ -1,17 +1,18 @@
+html {
+    /* Rolagem suave da página */
+    scroll-behavior: smooth;
+}
+
 body {
     font: 400 1rem "DM Sans", sans-serif;
     color: var(--text-color);
     background: var(--body-color);
-
-    /* ???????????????????????????????????? */
     -webkit-font-smoothing: antialised;
 }
 
-h1 {
+.title {
     font: 700 1.875rem "Poppins", sans-serif;
     color: var(--title-color);
-
-    /* ???????????????????????????????????? */
     -webkit-font-smoothing: auto;
 }
 
@@ -36,7 +37,16 @@ h1 {
     height: 1px;
     background: linear-gradient(
         270deg, 
-        hsla(var(--hue), 36%, 57%, 1) 0%, 
-        hsla(var(--hue), 65%, 88%, .34) 100%
+        hsla(var(--hue), 36%, 57%, 1), 
+        hsla(var(--hue), 65%, 88%, .34)
+    );
+}
+
+.divider-2 {
+    height: 1px;
+    background: linear-gradient(
+        270deg, 
+        hsla(var(--hue), 65%, 88%, .34),
+        hsla(var(--hue), 36%, 57%, 1)
     );
 }
