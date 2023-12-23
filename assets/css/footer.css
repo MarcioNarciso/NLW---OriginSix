@@ -1,0 +1,26 @@
+footer {
+    background: var(--base-color);
+}
+
+footer .brand .logo {
+    /*
+        Por padrão, as tags <a> têm display inline.
+        Para margin funcionar, precisa ser inline-block ou block.
+    */
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+footer .brand p{
+    color: var(--text-color-light);
+    margin-bottom: .75rem;
+}
+
+footer .social a{
+    margin-right: 2rem;
+}
+
+footer i{
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+}
