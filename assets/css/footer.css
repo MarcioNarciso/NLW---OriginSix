@@ -18,6 +18,13 @@ footer .brand p{
 
 footer .social a{
     margin-right: 2rem;
+    transition: .3s;
+    /* Necessário alterar inline para inline-block para usar o translateY */
+    display: inline-block;
+}
+
+footer .social a:hover{
+    transform: translateY(-15px);
 }
 
 footer i{
