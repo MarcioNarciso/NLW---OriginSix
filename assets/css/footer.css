@@ -2,6 +2,10 @@ footer {
     background: var(--base-color);
 }
 
+footer.section {
+    padding: 4rem 0;
+}
+
 footer .brand .logo {
     /*
         Por padrão, as tags <a> têm display inline.
@@ -16,8 +20,12 @@ footer .brand p{
     margin-bottom: .75rem;
 }
 
+footer .social {
+    grid-auto-flow: column;
+    width: fit-content;
+}
+
 footer .social a{
-    margin-right: 2rem;
     transition: .3s;
     /* Necessário alterar inline para inline-block para usar o translateY */
     display: inline-block;

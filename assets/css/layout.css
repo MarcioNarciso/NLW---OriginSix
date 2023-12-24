@@ -8,11 +8,18 @@
 }
 
 .section {
-    padding: 5rem 0;
+    /* 
+    Adiciona o tamanho do header "flutuante" para que ele não sobreponha o conteúdo.
+    */
+    padding: calc(5rem + var(--header-height)) 0;
 }
 
 .section .title{
     margin-bottom: 1rem;
+}
+
+.section .subtitle {
+    font-size: var(--subtitle-font-size);
 }
 
 .section header{
@@ -40,6 +47,3 @@
     box-shadow: 2px 4px 12px rgba(0, 0, 0, .15);
 }
 
-main {
-    margin-top: calc(var(--header-height) + 2rem);
-}

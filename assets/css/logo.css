@@ -1,6 +1,6 @@
 
 .logo {
-    font: 700 1.31rem 'Poppins', sans-serif;
+    font: 700 1.31rem var(--title-font);
     color: var(--title-color);
 }
 

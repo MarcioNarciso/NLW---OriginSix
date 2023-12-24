@@ -4,14 +4,14 @@ html {
 }
 
 body {
-    font: 400 1rem "DM Sans", sans-serif;
+    font: 400 1rem var(--body-font);
     color: var(--text-color);
     background: var(--body-color);
     -webkit-font-smoothing: antialised;
 }
 
 .title {
-    font: 700 1.875rem "Poppins", sans-serif;
+    font: 700 var(--title-font-size) var(--title-font);
     color: var(--title-color);
     -webkit-font-smoothing: auto;
 }
@@ -24,7 +24,7 @@ body {
     align-items: center;
     padding: 0 2rem;
     border-radius: .25rem;
-    font: 500 1rem "DM Sans", sans-serif;
+    font: 500 1rem var(--body-font);
 
     transition: background 0.3s;
 }
